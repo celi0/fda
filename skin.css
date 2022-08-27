@@ -191,7 +191,7 @@
   font-weight: 300;
 }
 
-#fa_toolbar {margin-top: 0px; height: 0px;}
+#fa_toolbar {margin-top: 0px; height: 0px!important;}
 #fa_toolbar_hidden {height: 10px; width: 10px;}
 
 /* NOTIFICACIONES */
@@ -309,7 +309,8 @@
 }
 
 .fa_tbMainElement, .fa_tbMainElement a, #fa_show {
-  vertical-align: baseline
+  vertical-align: baseline!important;
+  height: 0px!important;
 }
 
 .fake-toolbar .fkt-name {
