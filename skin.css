@@ -1,0 +1,331 @@
+/* CABECERA DEL FORO */
+.cabecera {
+  height: 100%;
+  text-align: center;
+  margin: 100px auto 100px;
+}
+
+.cabecera .cabecera-nom {
+  font-family: 'Devitos';
+  font-size: 95px;
+  font-weight: 400;
+  color: #9da6a8;
+  letter-spacing: -10px;
+  line-height: 100%;
+  word-spacing: 20px;
+}
+
+.cabecera .cabecera-sub {
+  font-family: var(--font-1);
+  font-size: 0px;
+  font-weight: 400;
+  color: #9da6a8;
+  text-transform: uppercase;
+  line-height: 100%;
+  background-image: url('https://imgur.com/NhIOJ5v.png');
+  background-color: var(--b-2);
+  background-blend-mode: hard-light;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: -70px;
+  position: absolute;
+  left: 0px;
+  z-index: 9;
+  width: 100%;
+  height: 32px;
+}
+
+.cabecera .cabecera-sub:after {
+  display: inline-block;
+  margin: auto;
+  border-top: 1px solid #9da6a8;
+  border-bottom: 1px solid #9da6a8;
+  content: "Facilis descensus Averno, Noctes atque dies patet atri ianua Ditis";
+  font-size: 8px;
+  font-weight: 600;
+  height: 8px;
+  line-height: 8px;
+  padding: 11px 0px;
+  letter-spacing: 5px;
+  width: 85%;
+}
+
+#page-header .navbar {
+  width: calc(100% - 40px);
+  background-color: var(--bt-1);
+  border-bottom: var(--brdr);
+  left: 0;
+  position: absolute;
+  font-size: 20px;
+  line-height: 20px;
+  height: 20px;
+  padding: 20px 20px 20px;
+  line-height: 12px;
+  border-top: var(--brdr);
+}
+
+#page-header .navbar a {
+  color: var(--text);
+  margin-right: 50px;
+}
+
+.navbar #search-box, .navbar .corners-top , .navbar .cornsers-bottom {
+  display: none;
+}
+
+#page-header .navbar .navbar-1, .linklist.navlinks {
+  height: 20px;
+  font-size: 0px;
+  text-align: right;
+}
+
+#page-header .navbarFixed {
+  position: fixed!important;
+  text-align: left !important;
+  top:-31px;
+  z-index: 999;
+  left: 0;
+  transition: ease-in 0.0s;
+  border-radius: 0!important;
+}
+
+.mainmenu[href="/"], .mainmenu[href="/memberlist"], .mainmenu[href="/profile?mode=editprofile"], .mainmenu[href="/privmsg?folder=inbox"]  {
+  font-size: 0px;
+}
+
+.mainmenu[href="/faq"], .mainmenu[href="/search"], .mainmenu[href="/groups"], .mainmenu[href="/calendar"] {
+  display: none;
+}
+
+.mainmenu[href="/"]:before {
+  content: "\f015";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.mainmenu[href="/memberlist"]:before {
+  content: "\f0c0";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.mainmenu[href="/profile?mode=editprofile"]:before {
+  content: "\f013";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.mainmenu[href="/privmsg?folder=inbox"]:before {
+  content: "\f2b6";
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+}
+
+.mainmenu[href="/privmsg?folder=inbox"] .new-message:before {
+  content: "\f06a";
+  font-family: 'Font Awesome 5 Pro';
+  line-height: 16px;
+  display: inline-block;
+  color: var(--accent);
+  font-size: 12px;
+  position: absolute;
+  margin-left: -5px;
+  margin-top: 7px;
+}
+
+.mainmenu#logout:before {
+  content: "\f011";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.mainmenu#logout:before {
+  content: "\f011";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.mainmenu[href="/register"]:before {
+  content: "\f304";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.mainmenu[href="/login"]:before {
+  content: "\f011";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.mainmenu[href="/admin"]:before {
+  content: "\f8bc";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+#fa_toolbar {margin-top: 0px; height: 0px;}
+#fa_toolbar_hidden {height: 10px; width: 10px;}
+
+/* NOTIFICACIONES */
+#page-header .navbar .fake-toolbar {
+  font-size: 10px;
+  display: inline-block;
+  float: left;
+}
+
+#fa_notifications {
+  font-size: 0px;
+  text-transform: uppercase;
+}
+
+#fa_notifications:before {
+  content: "\f0f3";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  color: var(--text);
+  font-weight: 300;
+}
+
+#fa_right .rightHeaderLink, #fa_left, #fa_search, #fa_textarea, #fa_welcome, #fa_share, #fa_hide, #fa_show {
+  display: none!important;
+}
+
+#fa_right #notif_list {
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding: 8px;
+  left: auto;
+  top: 61px;
+  font-size: 10px;
+  line-height: 120%;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: normal;
+  background: var(--bt-1);
+  width: 300px;
+  z-index: 2;
+  margin-left: 0px;
+  text-align: left;
+}
+
+#fa_right #notif_list a {
+  color: var(--accent);
+  margin: 0;
+}
+
+#fa_right #notif_list .content {
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#fa_right #notif_list li {
+  border-bottom: var(--brdr);
+  margin-bottom: 5px;
+}
+
+#fa_right.notification #notif_list {
+    display: block;
+}
+
+#notif_list li a.delete {
+  display: inline;
+  margin-left: 5px!important;
+}
+
+#notif_list li a.delete:after {
+  content: "\f057";
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 10px;
+  line-height: 10px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+#notif_list li.see_all {
+  border-bottom: 0px!important;
+  text-transform: uppercase;
+  margin: 0px auto 0px!important;
+  text-align: center;
+  display: block;
+}
+
+#notif_list li.see_all a {
+  color: var(--accent)!important;
+  display: inline-block!important;
+  font-family: var(--font-2);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+#notif_unread:not(:empty) {
+  background: var(--accent);
+  border-radius: 50%;
+  height: 12px;
+  font-size: 0px;
+  width: 12px;
+  line-height: 12px;
+  font-family: var(--font-2);
+  color: var(--b-1);
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  margin-left: -5px;
+  position: absolute;
+  margin-top: 8px;
+  overflow: hidden;
+  padding: 0px -5px;
+}
+
+.fa_tbMainElement, .fa_tbMainElement a, #fa_show {
+  vertical-align: baseline
+}
+
+.fake-toolbar .fkt-name {
+  text-align: left;
+  font-size: 9px;
+  line-height: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: var(--font-2);
+}
+
+.fake-toolbar .fkt-name a {
+  display: block;
+  color: var(--accent)!important;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  font-family: var(--font-1);
+}
